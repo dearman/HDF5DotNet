@@ -240,4 +240,4 @@ namespace HDF5DotNet
       }
    }
 
-}// end of namespace HDF5dotNET
+}// end of namespace HDF5DotNet

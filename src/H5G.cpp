@@ -295,4 +295,4 @@ namespace HDF5DotNet
             gcnew array<hssize_t>(2) { safe_cast<hssize_t>(stats.objno[0]), safe_cast<hssize_t>(stats.objno[1]) };
     }
 
-}// end of namespace HDF5dotNET
+}// end of namespace HDF5DotNet

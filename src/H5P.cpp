@@ -41,71 +41,71 @@ namespace HDF5DotNet
         switch(listClass)
         {
         case H5P::PropertyListClass::FILE_CREATE: 
-            classId = H5P_CLS_FILE_CREATE_g;
+            classId = H5P_CLS_FILE_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::ROOT:
-            classId = H5P_CLS_ROOT_g;
+            classId = H5P_CLS_ROOT_ID_g;
             break;
 
         case H5P::PropertyListClass::OBJECT_CREATE:
-            classId = H5P_CLS_OBJECT_CREATE_g;
+            classId = H5P_CLS_OBJECT_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::FILE_ACCESS:
-            classId = H5P_CLS_FILE_ACCESS_g;
+            classId = H5P_CLS_FILE_ACCESS_ID_g;
             break;
 
         case H5P::PropertyListClass::DATASET_CREATE:
-            classId = H5P_CLS_DATASET_CREATE_g;
+            classId = H5P_CLS_DATASET_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::DATASET_ACCESS:
-            classId = H5P_CLS_DATASET_ACCESS_g;
+            classId = H5P_CLS_DATASET_ACCESS_ID_g;
             break;
 
         case H5P::PropertyListClass::DATASET_XFER:
-            classId = H5P_CLS_DATASET_XFER_g;
+            classId = H5P_CLS_DATASET_XFER_ID_g;
             break;
 
         case H5P::PropertyListClass::FILE_MOUNT:
-            classId = H5P_CLS_FILE_MOUNT_g;
+            classId = H5P_CLS_FILE_MOUNT_ID_g;
             break;
 
         case H5P::PropertyListClass::GROUP_CREATE:
-            classId = H5P_CLS_GROUP_CREATE_g;
+            classId = H5P_CLS_GROUP_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::GROUP_ACCESS:
-            classId = H5P_CLS_GROUP_ACCESS_g;
+            classId = H5P_CLS_GROUP_ACCESS_ID_g;
             break;
 
         case H5P::PropertyListClass::DATATYPE_CREATE:
-            classId = H5P_CLS_DATATYPE_CREATE_g;
+            classId = H5P_CLS_DATATYPE_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::DATATYPE_ACCESS:
-            classId = H5P_CLS_DATATYPE_ACCESS_g;
+            classId = H5P_CLS_DATATYPE_ACCESS_ID_g;
             break;
 
         case H5P::PropertyListClass::STRING_CREATE:
-            classId = H5P_CLS_STRING_CREATE_g;
+            classId = H5P_CLS_STRING_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::ATTRIBUTE_CREATE:
-            classId = H5P_CLS_ATTRIBUTE_CREATE_g;
+            classId = H5P_CLS_ATTRIBUTE_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::OBJECT_COPY:
-            classId = H5P_CLS_OBJECT_COPY_g;
+            classId = H5P_CLS_OBJECT_COPY_ID_g;
             break;
 
         case H5P::PropertyListClass::LINK_CREATE:
-            classId = H5P_CLS_LINK_CREATE_g;
+            classId = H5P_CLS_LINK_CREATE_ID_g;
             break;
 
         case H5P::PropertyListClass::LINK_ACCESS:
-            classId = H5P_CLS_LINK_ACCESS_g;
+            classId = H5P_CLS_LINK_ACCESS_ID_g;
             break;
         }
 
@@ -404,4 +404,4 @@ namespace HDF5DotNet
         }
     }
 
-}// end of namespace HDF5dotNET
+}// end of namespace HDF5DotNet

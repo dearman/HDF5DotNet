@@ -800,4 +800,4 @@ namespace HDF5DotNet
         return delegateStatus;
     }
 
-}// end of namespace HDF5dotNET
+}// end of namespace HDF5DotNet
