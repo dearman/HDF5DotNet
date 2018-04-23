@@ -11,12 +11,12 @@ using namespace System::Security::Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly:AssemblyTitleAttribute("HDF5.Net.dll")];
+[assembly:AssemblyTitleAttribute("HDF5DotNet.dll")];
 [assembly:AssemblyCompanyAttribute("The HDF Group")];
-[assembly:AssemblyProductAttribute("HDF5.Net")];
-[assembly:AssemblyDescriptionAttribute("A C++/CLI wrapper of the HDF5 library")];
+[assembly:AssemblyProductAttribute("HDF5DotNet")];
+[assembly:AssemblyDescriptionAttribute("A CLR wrapper of the HDF5 library")];
 [assembly:AssemblyConfigurationAttribute("")];
-[assembly:AssemblyCopyrightAttribute("Copyright (c) 2007-2012")];
+[assembly:AssemblyCopyrightAttribute("Copyright (c) 2007-2018")];
 [assembly:AssemblyCultureAttribute("")];
 
 //
@@ -30,7 +30,7 @@ using namespace System::Security::Permissions;
 // You can specify all the value or you can default the Revision and Build Numbers
 // by using the '*' as shown below:
 
-[assembly:AssemblyVersionAttribute("1.8.9.0")];
+[assembly:AssemblyVersionAttribute("1.8.20.0")];
 [assembly:ComVisible(false)];
 [assembly:CLSCompliantAttribute(true)];
 [assembly:SecurityPermission(SecurityAction::RequestMinimum, UnmanagedCode = true)];
