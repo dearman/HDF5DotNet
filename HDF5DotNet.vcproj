@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="HDF5DotNet"
+	ProjectGUID="{FEE19386-D002-45B1-A2B5-2A5CC6570611}"
+	Keyword="ManagedCProj"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="2"
+			ManagedExtensions="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".\headers\include1.8;.\headers"
+				PreprocessorDefinitions='WIN32;_DEBUG;_WINDOWS;_USRDLL;HDF5_DOT_NET;HDF5DLL=\"hdf5dll.dll\";HDF5HLDLL=\"hdf5_hldll.dll\"'
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="hdf5dlld.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(HDF5_LIB)"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				EntryPointSymbol="main"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="2"
+			ManagedExtensions="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".\headers\include1.8;.\headers"
+				PreprocessorDefinitions='WIN32;_DEBUG;_WINDOWS;_USRDLL;HDF5_DOT_NET;HDF5DLL=\"hdf5dll.dll\";HDF5HLDLL=\"hdf5_hldll.dll\"'
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="hdf5dlld.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(HDF5_LIB)"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				EntryPointSymbol="main"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="2"
+			ManagedExtensions="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".\headers\include1.8;.\headers"
+				PreprocessorDefinitions='WIN32;NDEBUG;_WINDOWS;_USRDLL;HDF5_DOT_NET;HDF5DLL=\"hdf5dll.dll\";HDF5HLDLL=\"hdf5_hldll.dll\"'
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="hdf5dll.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(HDF5_LIB)"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="2"
+			ManagedExtensions="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".\headers\include1.8;.\headers"
+				PreprocessorDefinitions='WIN32;NDEBUG;_WINDOWS;_USRDLL;HDF5_DOT_NET;HDF5DLL=\"hdf5dll.dll\";HDF5HLDLL=\"hdf5_hldll.dll\"'
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="hdf5dll.lib"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(HDF5_LIB)"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+    <File RelativePath=".\headers\H5.h" />
+    <File RelativePath=".\headers\H5A.h" />
+    <File RelativePath=".\headers\H5AIterateCallback.h" />
+    <File RelativePath=".\headers\H5AllocCallback.h" />
+    <File RelativePath=".\headers\H5Array.h" />
+    <File RelativePath=".\headers\H5AttributeId.h" />
+    <File RelativePath=".\headers\H5AttributeInfo.h" />
+    <File RelativePath=".\headers\H5AutoCallback.h" />
+    <File RelativePath=".\headers\H5D.h" />
+    <File RelativePath=".\headers\H5DataSetId.h" />
+    <File RelativePath=".\headers\H5DataSpaceId.h" />
+    <File RelativePath=".\headers\H5DataTypeId.h" />
+    <File RelativePath=".\headers\H5E.h" />
+    <File RelativePath=".\headers\H5F.h" />
+    <File RelativePath=".\headers\H5FileId.h" />
+    <File RelativePath=".\headers\H5FileOrGroupId.h" />
+    <File RelativePath=".\headers\H5FloatingBitFields.h" />
+    <File RelativePath=".\headers\H5FreeCallback.h" />
+    <File RelativePath=".\headers\H5G.h" />
+    <File RelativePath=".\headers\H5GInfo.h" />
+    <File RelativePath=".\headers\H5GIterateCallback.h" />
+    <File RelativePath=".\headers\H5GroupId.h" />
+    <File RelativePath=".\headers\H5GStorageType.h" />
+    <File RelativePath=".\headers\H5GType.h" />
+    <File RelativePath=".\headers\H5I.h" />
+    <File RelativePath=".\headers\H5Id.h" />
+    <File RelativePath=".\headers\H5IndexType.h" />
+    <File RelativePath=".\headers\H5IterationOrder.h" />
+    <File RelativePath=".\headers\H5IterationResult.h" />
+    <File RelativePath=".\headers\H5L.h" />
+    <File RelativePath=".\headers\H5LinkInfo.h" />
+    <File RelativePath=".\headers\H5LIterateCallback.h" />
+    <File RelativePath=".\headers\H5LocId.h" />
+    <File RelativePath=".\headers\H5Memory.h" />
+    <File RelativePath=".\headers\H5O.h" />
+    <File RelativePath=".\headers\H5ObjectId.h" />
+    <File RelativePath=".\headers\H5ObjectInfo.h" />
+    <File RelativePath=".\headers\H5ObjectType.h" />
+    <File RelativePath=".\headers\H5ObjectWithAttributes.h" />
+    <File RelativePath=".\headers\H5P.h" />
+    <File RelativePath=".\headers\H5PropertyListId.h" />
+    <File RelativePath=".\headers\H5R.h" />
+    <File RelativePath=".\headers\H5S.h" />
+    <File RelativePath=".\headers\H5T.h" />
+    <File RelativePath=".\headers\H5TB.h" />
+    <File RelativePath=".\headers\hvl_t.h" />
+    <File RelativePath=".\headers\HDFException.h" />
+    <File RelativePath=".\headers\HDFExceptionSubclasses.h" />
+    <File RelativePath=".\headers\Header.h" />
+    <File RelativePath=".\headers\IhInfo.h" />
+    <File RelativePath=".\headers\include1.8\H5api_adpt.h" />
+    <File RelativePath=".\headers\include1.8\H5Apublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Cpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Dpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Epubgen.h" />
+    <File RelativePath=".\headers\include1.8\H5Epublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Fpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Gpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Ipublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Lpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5MMpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Opublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Ppublic.h" />
+    <File RelativePath=".\headers\include1.8\H5pubconf.h" />
+    <File RelativePath=".\headers\include1.8\H5public.h" />
+    <File RelativePath=".\headers\include1.8\H5Rpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Spublic.h" />
+    <File RelativePath=".\headers\include1.8\H5Tpublic.h" />
+    <File RelativePath=".\headers\include1.8\H5version.h" />
+    <File RelativePath=".\headers\include1.8\H5Zpublic.h" />
+    <File RelativePath=".\headers\IntPtrAux.h" />
+    <File RelativePath=".\headers\LibraryVersion.h" />
+    <File RelativePath=".\headers\LinkType.h" />
+    <File RelativePath=".\headers\Message.h" />
+    <File RelativePath=".\headers\MetaSize.h" />
+    <File RelativePath=".\headers\ObjectInfo.h" />
+    <File RelativePath=".\headers\ObjectReference.h" />
+    <File RelativePath=".\headers\RegionReference.h" />
+    <File RelativePath=".\headers\Space.h" />
+    <File RelativePath=".\headers\TableFieldInfo.h" />
+    <File RelativePath=".\headers\TableInfo.h" />
+    <File RelativePath=".\headers\UnmanagedMemoryStream.h" />
+    <File RelativePath=".\headers\VLen.h" />
+		</Filter>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+    <File RelativePath=".\AssemblyInfo.cpp" />
+    <File RelativePath=".\src\H5.cpp" />
+    <File RelativePath=".\src\H5A.cpp" />
+    <File RelativePath=".\src\H5Array.cpp" />
+    <File RelativePath=".\src\H5AttributeId.cpp" />
+    <File RelativePath=".\src\H5D.cpp" />
+    <File RelativePath=".\src\H5DataSetId.cpp" />
+    <File RelativePath=".\src\H5DataSpaceId.cpp" />
+    <File RelativePath=".\src\H5DataTypeId.cpp" />
+    <File RelativePath=".\src\H5E.cpp" />
+    <File RelativePath=".\src\H5F.cpp" />
+    <File RelativePath=".\src\H5FileId.cpp" />
+    <File RelativePath=".\src\H5G.cpp" />
+    <File RelativePath=".\src\H5GroupId.cpp" />
+    <File RelativePath=".\src\H5I.cpp" />
+    <File RelativePath=".\src\H5L.cpp" />
+    <File RelativePath=".\src\H5Memory.cpp" />
+    <File RelativePath=".\src\H5O.cpp" />
+    <File RelativePath=".\src\H5ObjectId.cpp" />
+    <File RelativePath=".\src\H5ObjectInfo.cpp" />
+    <File RelativePath=".\src\H5P.cpp" />
+    <File RelativePath=".\src\H5PropertyListId.cpp" />
+    <File RelativePath=".\src\H5R.cpp" />
+    <File RelativePath=".\src\H5S.cpp" />
+    <File RelativePath=".\src\H5T.cpp" />
+    <File RelativePath=".\src\H5TB.cpp" />
+    <File RelativePath=".\src\HDFException.cpp" />
+    <File RelativePath=".\src\HDFExceptionSubclasses.cpp" />
+    <File RelativePath=".\src\Header.cpp" />
+    <File RelativePath=".\src\IhInfo.cpp" />
+    <File RelativePath=".\src\Message.cpp" />
+    <File RelativePath=".\src\MetaSize.cpp" />
+    <File RelativePath=".\src\ObjectReference.cpp" />
+    <File RelativePath=".\src\RegionReference.cpp" />
+    <File RelativePath=".\src\Space.cpp" />
+    <File RelativePath=".\src\UnmanagedMemoryStream.cpp" />
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

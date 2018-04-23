@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FEE19386-D002-45B1-A2B5-2A5CC6570611}</ProjectGuid>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <BasePlatformToolset>v120_xp</BasePlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\CascadePropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\CascadePropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(HDF5_INCLUDE_DIR);$(SolutionDir)\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_USRDLL;HDF5_DOT_NET;HDF5DLL="$(HDF5_DLL_DEBUG)";HDF5HLDLL="$(HDF5_HL_DLL_DEBUG)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(HDF5_LIB_DEBUG);$(HDF5_HL_LIB_DEBUG);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(HDF5_LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\headers\include1.8;.\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HDF5_DOT_NET;HDF5DLL="hdf5dll.dll";HDF5HLDLL="hdf5_hldll.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>hdf5dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(HDF5_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="src\H5.cpp" />
+    <ClCompile Include="src\H5A.cpp" />
+    <ClCompile Include="src\H5Array.cpp" />
+    <ClCompile Include="src\H5AttributeId.cpp" />
+    <ClCompile Include="src\H5D.cpp" />
+    <ClCompile Include="src\H5DataSetId.cpp" />
+    <ClCompile Include="src\H5DataSpaceId.cpp" />
+    <ClCompile Include="src\H5DataTypeId.cpp" />
+    <ClCompile Include="src\H5E.cpp" />
+    <ClCompile Include="src\H5F.cpp" />
+    <ClCompile Include="src\H5FileId.cpp" />
+    <ClCompile Include="src\H5G.cpp" />
+    <ClCompile Include="src\H5GroupId.cpp" />
+    <ClCompile Include="src\H5I.cpp" />
+    <ClCompile Include="src\H5L.cpp" />
+    <ClCompile Include="src\H5Memory.cpp" />
+    <ClCompile Include="src\H5O.cpp" />
+    <ClCompile Include="src\H5ObjectId.cpp" />
+    <ClCompile Include="src\H5ObjectInfo.cpp" />
+    <ClCompile Include="src\H5P.cpp" />
+    <ClCompile Include="src\H5PropertyListId.cpp" />
+    <ClCompile Include="src\H5R.cpp" />
+    <ClCompile Include="src\H5S.cpp" />
+    <ClCompile Include="src\H5T.cpp" />
+    <ClCompile Include="src\H5TB.cpp" />
+    <ClCompile Include="src\HDFException.cpp" />
+    <ClCompile Include="src\HDFExceptionSubclasses.cpp" />
+    <ClCompile Include="src\Header.cpp" />
+    <ClCompile Include="src\IhInfo.cpp" />
+    <ClCompile Include="src\Message.cpp" />
+    <ClCompile Include="src\MetaSize.cpp" />
+    <ClCompile Include="src\ObjectReference.cpp" />
+    <ClCompile Include="src\RegionReference.cpp" />
+    <ClCompile Include="src\Space.cpp" />
+    <ClCompile Include="src\UnmanagedMemoryStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\H5.h" />
+    <ClInclude Include="headers\H5A.h" />
+    <ClInclude Include="headers\H5AIterateCallback.h" />
+    <ClInclude Include="headers\H5AllocCallback.h" />
+    <ClInclude Include="headers\H5Array.h" />
+    <ClInclude Include="headers\H5AttributeId.h" />
+    <ClInclude Include="headers\H5AttributeInfo.h" />
+    <ClInclude Include="headers\H5AutoCallback.h" />
+    <ClInclude Include="headers\H5D.h" />
+    <ClInclude Include="headers\H5DataSetId.h" />
+    <ClInclude Include="headers\H5DataSpaceId.h" />
+    <ClInclude Include="headers\H5DataTypeId.h" />
+    <ClInclude Include="headers\H5E.h" />
+    <ClInclude Include="headers\H5F.h" />
+    <ClInclude Include="headers\H5FileId.h" />
+    <ClInclude Include="headers\H5FileOrGroupId.h" />
+    <ClInclude Include="headers\H5FloatingBitFields.h" />
+    <ClInclude Include="headers\H5FreeCallback.h" />
+    <ClInclude Include="headers\H5G.h" />
+    <ClInclude Include="headers\H5GInfo.h" />
+    <ClInclude Include="headers\H5GIterateCallback.h" />
+    <ClInclude Include="headers\H5GroupId.h" />
+    <ClInclude Include="headers\H5GStorageType.h" />
+    <ClInclude Include="headers\H5GType.h" />
+    <ClInclude Include="headers\H5I.h" />
+    <ClInclude Include="headers\H5Id.h" />
+    <ClInclude Include="headers\H5IndexType.h" />
+    <ClInclude Include="headers\H5IterationOrder.h" />
+    <ClInclude Include="headers\H5IterationResult.h" />
+    <ClInclude Include="headers\H5L.h" />
+    <ClInclude Include="headers\H5LinkInfo.h" />
+    <ClInclude Include="headers\H5LIterateCallback.h" />
+    <ClInclude Include="headers\H5LocId.h" />
+    <ClInclude Include="headers\H5Memory.h" />
+    <ClInclude Include="headers\H5O.h" />
+    <ClInclude Include="headers\H5ObjectId.h" />
+    <ClInclude Include="headers\H5ObjectInfo.h" />
+    <ClInclude Include="headers\H5ObjectType.h" />
+    <ClInclude Include="headers\H5ObjectWithAttributes.h" />
+    <ClInclude Include="headers\H5P.h" />
+    <ClInclude Include="headers\H5PropertyListId.h" />
+    <ClInclude Include="headers\H5R.h" />
+    <ClInclude Include="headers\H5S.h" />
+    <ClInclude Include="headers\H5T.h" />
+    <ClInclude Include="headers\H5TB.h" />
+    <ClInclude Include="headers\HDFException.h" />
+    <ClInclude Include="headers\HDFExceptionSubclasses.h" />
+    <ClInclude Include="headers\Header.h" />
+    <ClInclude Include="headers\hvl_t.h" />
+    <ClInclude Include="headers\IhInfo.h" />
+    <ClInclude Include="headers\IntPtrAux.h" />
+    <ClInclude Include="headers\LibraryVersion.h" />
+    <ClInclude Include="headers\LinkType.h" />
+    <ClInclude Include="headers\Message.h" />
+    <ClInclude Include="headers\MetaSize.h" />
+    <ClInclude Include="headers\HDF5_Native.h" />
+    <ClInclude Include="headers\ObjectInfo.h" />
+    <ClInclude Include="headers\ObjectReference.h" />
+    <ClInclude Include="headers\RegionReference.h" />
+    <ClInclude Include="headers\Space.h" />
+    <ClInclude Include="headers\TableFieldInfo.h" />
+    <ClInclude Include="headers\TableInfo.h" />
+    <ClInclude Include="headers\UnmanagedMemoryStream.h" />
+    <ClInclude Include="headers\VLen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
