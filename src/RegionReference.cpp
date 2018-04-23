@@ -27,7 +27,7 @@ namespace HDF5DotNet
     RegionReference::RegionReference(array<Byte>^ a)
     {
         m_rr = gcnew array<Byte>(H5R_DSET_REG_REF_BUF_SIZE);
-        Array::Copy(a, m_rr, H5R_DSET_REG_REF_BUF_SIZE);
+        Array::Copy(a, m_rr, (long long)H5R_DSET_REG_REF_BUF_SIZE);
     }
 
     array<Byte>^ RegionReference::ToByteArray()

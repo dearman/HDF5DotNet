@@ -27,7 +27,7 @@ namespace HDF5DotNet
     ObjectReference::ObjectReference(array<Byte>^ a)
     {
         m_or = gcnew array<Byte>(H5R_OBJ_REF_BUF_SIZE);
-        Array::Copy(a, m_or, H5R_OBJ_REF_BUF_SIZE);
+        Array::Copy(a, m_or, (long long)H5R_OBJ_REF_BUF_SIZE);
     }
 
     array<Byte>^ ObjectReference::ToByteArray()
